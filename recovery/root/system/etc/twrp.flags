@@ -1,0 +1,54 @@
+# mount point      fstype  device             device2               flags
+/cache              ext4  /dev/block/by-name/rescue                 flags=display=Cache;backup=1;wipeingui;wipeduringfactoryreset
+/metadata           ext4  /dev/block/by-name/metadata               flags=display=Metadata;backup=1
+/storage            f2fs  /data/media/0                             flags=display="Internal Storage";usermrf;backup=1;fsflags="bind";removable
+/mnt/vendor/persist            ext4  /dev/block/by-name/persist                flags=display=Persist
+/persist_image      emmc  /dev/block/by-name/persist                flags=display=Persist;backup=1;flashimg
+/frp                emmc  /dev/block/by-name/frp                    flags=display=FRP;backup=1;flashimg
+/nvram              emmc  /dev/block/by-name/nvram                  flags=display=NVRAM;backup=1
+/nvdata             emmc  /dev/block/by-name/nvdata                 flags=subpartitionof=/nvram;backup=1
+/nvcfg              emmc  /dev/block/by-name/nvcfg                  flags=subpartitionof=/nvram;backup=1
+/proinfo            emmc  /dev/block/by-name/proinfo                flags=display=Proinfo
+/lk1                emmc  /dev/block/by-name/lk1                    flags=display=Bootloader
+/bootloader2        emmc  /dev/block/by-name/bootloader2            flags=display=Bootloader2
+/dtbo               emmc  /dev/block/by-name/dtbo                   flags=display=Dtbo;slotselect;backup=1
+/md1img             emmc  /dev/block/by-name/md1img                 flags=display=Modem;backup=1;flashimg
+/para               emmc  /dev/block/by-name/para                   flags=display=Para
+/boot_para          emmc  /dev/block/by-name/boot_para
+/misc               emmc  /dev/block/by-name/misc                   flags=display=Misc
+/boot               emmc  /dev/block/by-name/boot                   flags=display=Boot;slotselect;backup=1;flashimg
+/vbmeta             emmc  /dev/block/by-name/vbmeta                 flags=display=VBMeta;slotselect;backup=1;flashimg
+/vbmeta_vendor      emmc  /dev/block/by-name/vbmeta_vendor          flags=display="VBMeta Vendor";slotselect;backup=1;flashimg
+/vbmeta_system      emmc  /dev/block/by-name/vbmeta_system          flags=display="VBMeta System";slotselect;backup=1;flashimg
+/logo               emmc  /dev/block/by-name/logo_a                 flags=display=Logo
+/vendor_boot        emmc  /dev/block/by-name/vendor_boot            flags=display="Vendor Boot";slotselect;backup=1;flashimg
+/protect_f          emmc  /dev/block/by-name/protect1               flags=display=Protect;backup=1
+/protect_s          emmc  /dev/block/by-name/protect2               flags=subpartitionof=/protect_f;backup=1
+/cust               ext4  /dev/block/by-name/cust                   flags=display="Cust"
+/cust_image         emmc  /dev/block/by-name/cust                   flags=display="Cust";backup=1;flashimg
+/expdb              emmc  /dev/block/by-name/expdb
+/seccfg             emmc  /dev/block/by-name/seccfg
+/tee1               emmc  /dev/block/by-name/tee1
+/tee2               emmc  /dev/block/by-name/tee2
+/scp1               emmc  /dev/block/by-name/scp1
+/scp2               emmc  /dev/block/by-name/scp2
+/sspm1              emmc  /dev/block/by-name/sspm1
+/sspm2              emmc  /dev/block/by-name/sspm2
+/dpm1               emmc  /dev/block/by-name/dpm1
+/dpm2               emmc  /dev/block/by-name/dpm2
+/mcupm1             emmc  /dev/block/by-name/mcupm1
+/mcupm2             emmc  /dev/block/by-name/mcupm2
+/md1dsp             emmc  /dev/block/by-name/md1dsp
+/md1arm7            emmc  /dev/block/by-name/md1arm7
+/md3img             emmc  /dev/block/by-name/md3img
+/gz1                emmc  /dev/block/by-name/gz1
+/gz2                emmc  /dev/block/by-name/gz2
+/ccu                emmc  /dev/block/by-name/ccu
+/vcp                emmc  /dev/block/by-name/vcp
+/gpueb              emmc  /dev/block/by-name/gpueb
+/mcf_ota            emmc  /dev/block/by-name/mcf_ota
+/odmdtbo            emmc  /dev/block/by-name/odmdtbo
+/otp                emmc  /dev/block/by-name/otp
+# Removable Storage
+/sdcard1            auto  /dev/block/mmcblk1p1 /dev/block/mmcblk0p1 flags=fsflags=utf8;display="MicroSD";storage;wipeingui;removable
+/usb_otg            vfat  /dev/block/sdd1      /dev/block/sdd       flags=fsflags=utf8;display="USB-Storage";storage;wipeingui;removable

@@ -1,0 +1,17 @@
+/lib/modules/mtk_rpmsg_mbox.ko
+/lib/modules/mtk_tinysys_ipi.ko
+/lib/modules/mtk-afe-external.ko
+/lib/modules/scp.ko
+/lib/modules/lct_tp.ko
+/lib/modules/xiaomi_tp.ko
+/lib/modules/nt36528_spi.ko
+/lib/modules/ft8057p_spi.ko
+/lib/modules/mt6377-accdet.ko
+/lib/modules/mtk_gpufreq_wrapper.ko
+/lib/modules/thermal_interface.ko
+/lib/modules/soc_temp_lvts.ko
+/lib/modules/mi_thermal_interface.ko
+/lib/modules/pmic_temp.ko
+/lib/modules/board_temp.ko
+/lib/modules/thermal-generic-adc.ko
+/lib/modules/thermal_trace.ko

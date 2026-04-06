@@ -1,0 +1,4 @@
+#<src>                    <mnt_point>  <type> <mnt_flags and options> <fs_mgr_flags>
+system                    /postinstall ext4   ro,nosuid,nodev,noexec  slotselect_other,logical
+/dev/block/by-name/system /postinstall ext4   ro,nosuid,nodev,noexec  slotselect_other
+/dev/block/mapper/system /postinstall ext4   ro,nosuid,nodev,noexec  slotselect_other

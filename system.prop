@@ -1,0 +1,4 @@
+ro.hardware.kmsetkey=mitee
+ro.hardware.gatekeeper=mitee
+ro.vendor.mtk_tee_gp_support=1
+ro.vendor.mtk_microtrust_tee_support=1
