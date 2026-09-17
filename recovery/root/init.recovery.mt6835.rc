@@ -87,6 +87,14 @@ on boot
     chmod 0664 /dev/xiaomi-touch
     chown system system /sys/class/touch/tp_dev/fod_status
     chmod 0664 /sys/class/touch/tp_dev/fod_status
+    start load-touch-modules
+
+service load-touch-modules /system/bin/modprobe --all=/lib/modules/modules.load.touch --dirname=/lib/modules
+    class core
+    user root
+    group root
+    oneshot
+    seclabel u:r:recovery:s0  
 
 service touchfeature-hal-1-0 /vendor/bin/hw/vendor.xiaomi.hardware.touchfeature@1.0-service
     class main
