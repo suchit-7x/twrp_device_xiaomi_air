@@ -3,6 +3,6 @@
 # SPDX-License-Identifier: Apache-2.0
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/twrp_air.mk
+    $(LOCAL_DIR)/pb_air.mk
 
-COMMON_LUNCH_CHOICES := twrp_air-eng
+COMMON_LUNCH_CHOICES := pb_air-eng
